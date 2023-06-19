@@ -1,9 +1,10 @@
 <template>
-<!-- Folder Structure -->
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link  :to = "{name: 'about'}" >About</router-link>
-    <router-link  :to = "{name: 'jobs'}" >Jobs</router-link>
+    <router-link to="/">Home</router-link> |<!--"/" is the path structure  -->
+    <router-link :to = "{name: 'about'}" >About</router-link> |
+    <!-- :to,is the binding structure and call it by name "{name: 'Name given to router in index.js'}" -->
+    <router-link :to = "{name: 'jobs'}" >Jobs</router-link> 
+    <!-- <router-link :to = "{name:'jobDetails'}">JobDetails</router-link> -->
   </nav>
   <router-view/>
 </template>
