@@ -1,5 +1,6 @@
 <template>
   <div v-for="job in jobs" :key = job.id>
+      <!-- Using a v-for, we must use a key property unique for each job -->
       <h2>{{job.title}}</h2>
   </div>
 </template>
