@@ -1,4 +1,5 @@
 <template>
+<!-- 404 page and redirects -->
   <nav>
     <router-link to="/">Home</router-link> |<!--"/" is the path structure  -->
     <router-link :to = "{name: 'about'}" >About</router-link> |
@@ -25,6 +26,7 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
