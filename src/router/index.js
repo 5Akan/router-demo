@@ -23,7 +23,8 @@ const routes = [
   {
      path:'/jobs/:id', //':parameter name' for new route parameter which changes 
      name:'jobDetails',
-     component:jobDetails
+     component:jobDetails,
+     props:true
     }
 ]
 
