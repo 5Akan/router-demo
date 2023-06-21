@@ -11,7 +11,9 @@ export default {
     props:["id"],
 //     data(){
 //         return {
-//     id: this.$route.params.id
+//     id: this.$route.params.id 
+//$route is to get the path from the browser
+//while $router is to move whatever to the location
 // }
 //     }
 
