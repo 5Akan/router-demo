@@ -12,13 +12,15 @@
 export default {
     data(){
         return{
-            jobs:[
-                {title:'Web designer',id:'1',details:'lorem'},
-                {title:'UX designer',id:'2',details:'lorem'},
-                {title:'Vue designer',id:'3',details:'lorem'}
-            ]
+            jobs:[]
         }
-    }
+    },
+    mounted(){
+        fetch("http://localhost:3000/jobs")//Fetch is asynchronous and returns a promise
+        .then((res)=>res.json())//then() method works when fetch finishes working ,it fires a callback function after fetch is done
+        .then(data => this.jobs = data)
+        .catch(err => console.log(err.message))
+        }
 }
 </script>
 
