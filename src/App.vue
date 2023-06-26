@@ -1,16 +1,16 @@
 <template>
-<!-- Programmatic Navigation-->
-  <nav>
-    <router-link to="/">Home</router-link> |<!--"/" is the path structure  -->
-    <router-link :to = "{name: 'about'}" >About</router-link> |
-    <!-- :to,is the binding structure and call it by name "{name: 'Name given to router in index.js'}" -->
-    <router-link :to = "{name: 'jobs'}" >Jobs</router-link> 
-    <!-- <router-link :to = "{name:'jobDetails'}">JobDetails</router-link> -->
-  </nav>
+<!-- Fetching Data -->
+    <nav>
+      <router-link to="/">Home</router-link> |<!--"/" is the path structure  -->
+      <router-link :to = "{name: 'about'}" >About</router-link>|
+      <!-- :to,is the binding structure and call it by name "{name: 'Name given to router in index.js'}" -->
+      <router-link :to = "{name: 'jobs'}" >Jobs</router-link> 
+      <!-- <router-link :to = "{name:'jobDetails'}">JobDetails</router-link> -->
+    </nav>
 
-  <button @click= "redirect"> Redirect</button>
-  <button @click= "back">Go Back</button>
-  <button @click= "forward">Go Forward</button>
+    <button @click= "redirect"> Redirect</button>
+    <button @click= "back">Go Back</button>
+    <button @click= "forward">Go Forward</button>
 
   <router-view/>
 </template>
@@ -31,6 +31,7 @@ export default {
  }
 }
 </script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
