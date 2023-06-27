@@ -1,9 +1,15 @@
 <template>
+<div v-if=job>
   <h1>Job Details Page</h1>
   <p>{{job.title}}</p>
   <p>{{job.details}}</p>
   <p>The job id is {{ id }}</p>
-  <!-- '$route' contains information about the  current route including route parameters-->
+</div>
+<div v-else>
+  Loading jobs Details...
+</div>
+  
+  <!-- '$route' contains information about the current route including route parameters-->
 </template>
 
 <script>
